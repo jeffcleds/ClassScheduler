@@ -31,7 +31,6 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             panel1 = new Panel();
-            timeLbl = new Label();
             panel3 = new Panel();
             label1 = new Label();
             label4 = new Label();
@@ -46,7 +45,6 @@
             passwordTB = new TextBox();
             usernameTB = new TextBox();
             timer1 = new System.Windows.Forms.Timer(components);
-            button1 = new Button();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -58,8 +56,6 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(timeLbl);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(pictureBox3);
@@ -70,17 +66,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(440, 460);
             panel1.TabIndex = 0;
-            // 
-            // timeLbl
-            // 
-            timeLbl.AutoSize = true;
-            timeLbl.Location = new Point(122, 11);
-            timeLbl.Name = "timeLbl";
-            timeLbl.Size = new Size(30, 15);
-            timeLbl.TabIndex = 9;
-            timeLbl.Text = "Time";
-            timeLbl.TextAlign = ContentAlignment.MiddleCenter;
-            timeLbl.Click += timeLabel_Click;
             // 
             // panel3
             // 
@@ -235,15 +220,6 @@
             // 
             timer1.Tick += timer1_Tick;
             // 
-            // button1
-            // 
-            button1.Location = new Point(38, 42);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 10;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(6F, 15F);
@@ -285,7 +261,5 @@
         private Label label4;
         private System.Windows.Forms.Timer timer1;
         private Panel panel3;
-        private Label timeLbl;
-        private Button button1;
     }
 }
