@@ -70,6 +70,7 @@
             // panel3
             // 
             panel3.Controls.Add(label1);
+            panel3.Font = new Font("Rockwell", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             panel3.Location = new Point(132, 41);
             panel3.Name = "panel3";
             panel3.Size = new Size(194, 37);
@@ -81,11 +82,12 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Rockwell", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DodgerBlue;
-            label1.Location = new Point(16, 7);
+            label1.Location = new Point(14, 7);
             label1.Name = "label1";
             label1.Size = new Size(163, 23);
             label1.TabIndex = 1;
             label1.Text = "Class Scheduler";
+            label1.Click += label1_Click;
             // 
             // label4
             // 
@@ -204,6 +206,7 @@
             // 
             // passwordTB
             // 
+            passwordTB.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             passwordTB.Location = new Point(229, 26);
             passwordTB.Name = "passwordTB";
             passwordTB.Size = new Size(184, 22);
@@ -211,6 +214,7 @@
             // 
             // usernameTB
             // 
+            usernameTB.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernameTB.Location = new Point(25, 26);
             usernameTB.Name = "usernameTB";
             usernameTB.Size = new Size(184, 22);

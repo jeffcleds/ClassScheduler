@@ -17,7 +17,6 @@ namespace ClassScheduler1
     {
         private int selectedEmployeeNo; //para sa pagselect ning rows.
 
-
         public maingui()
         {
             InitializeComponent();
@@ -175,7 +174,6 @@ namespace ClassScheduler1
         private void label9_Click(object sender, EventArgs e) //settings
         {
             settingsPanel.Visible = !settingsPanel.Visible;
-
         }
 
         private void label16_Click(object sender, EventArgs e)
@@ -190,11 +188,10 @@ namespace ClassScheduler1
 
         private void timer1_Tick(object sender, EventArgs e) //pangmove ning text
         {
-            timeLabel.Text = "Welcome to Class Scheduler by BSIT 3B. The time and day is brought to you by: STI College Naga: " + DateTime.Now.ToString("dddd, MMMM dd, yyyy hh:mm:ss tt");
-
+            timeLabel.Text = "Welcome to Class Scheduler by BSIT 3B. " +
+                "The time and day is brought to you by: STI College Naga: " + DateTime.Now.ToString("dddd, MMMM dd, yyyy hh:mm:ss tt");
 
             timeLabel.Left -= 2;
-
 
             if (timeLabel.Right < 0)
             {
@@ -319,6 +316,11 @@ namespace ClassScheduler1
         }
 
         private void timeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

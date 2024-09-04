@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
@@ -7,16 +8,27 @@ using System.Windows.Forms;
 
 namespace ClassScheduler1
 {
+
     public partial class Login : Form
     {
         // NOTES: Pag malaag ning login sa query, INSERT INTO adminTB (Username, Password, Role) VALUES ('aliceguo', 'guo12345', 'Higher Admin');
         // Pag ma check man, SELECT * FROM adminTB
 
+        private string data;
+        private int length = 0;
+
         public Login()
         {
 
             InitializeComponent();
+            timer1.Interval = 50; // Set the interval to 100ms or as needed
+            timer1.Tick += new EventHandler(timer1_Tick);
+            data = "Class Scheduler";
+            label1.Text = "";
             timer1.Start();
+
+
+
             this.AcceptButton = loginBtn; //pang select ning enter button para mag direct login without clicking
             passwordTB.PasswordChar = '*'; //pang hide password
         }
@@ -117,6 +129,7 @@ namespace ClassScheduler1
                 "Creators:\nErnie Joseph Cledera" +
                 "\nCherry Mea Chan" +
                 "\nAllan Aboga-a Jr." +
+                "\nChrystian Festin" +
                 "\nGerald Bernisca" +
                 "\nJoseph Bino" +
                 "\nMelchizedec King Sanchez" +
@@ -126,20 +139,17 @@ namespace ClassScheduler1
                 "\nCogie Ricafort");
         }
 
+
         private void timer1_Tick(object sender, EventArgs e) //pang move ning text
         {
-            label1.Text = "Class Scheduler                      " +
-                "Class Scheduler                      " +
-                "Class Scheduler";
-            timeLbl.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy hh:mm:ss tt");
-
-            label1.Left -= 5;
-
-
-            if (label1.Right < 0)
+             if (length < data.Length)
             {
-
-                label1.Left = this.ClientSize.Width;
+                label1.Text += data[length];
+                length++;
+            }
+            else
+            {
+                timer1.Stop();
             }
         }
 
@@ -150,6 +160,11 @@ namespace ClassScheduler1
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
