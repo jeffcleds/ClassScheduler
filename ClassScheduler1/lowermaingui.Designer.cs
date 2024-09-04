@@ -418,7 +418,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1101, 746);
-            Controls.Add(panel4);
             Controls.Add(settingsPanel);
             Controls.Add(panel2);
             Controls.Add(dataGridView1);
@@ -429,6 +428,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            Controls.Add(panel4);
             Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Name = "lowermaingui";
