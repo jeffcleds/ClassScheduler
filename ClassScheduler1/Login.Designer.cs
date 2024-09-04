@@ -71,7 +71,7 @@
             // 
             panel3.Controls.Add(label1);
             panel3.Font = new Font("Rockwell", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            panel3.Location = new Point(132, 41);
+            panel3.Location = new Point(129, 41);
             panel3.Name = "panel3";
             panel3.Size = new Size(194, 37);
             panel3.TabIndex = 8;
@@ -131,7 +131,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(92, 84);
+            pictureBox1.Location = new Point(89, 84);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(264, 218);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
