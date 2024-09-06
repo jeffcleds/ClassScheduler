@@ -324,6 +324,18 @@ namespace ClassScheduler1
         {
 
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            settingsPanel.Visible = false;
+        }
+
+        private void label16_Click_1(object sender, EventArgs e)
+        {
+            InstructorsForm instructorsForm = new InstructorsForm();
+            instructorsForm.Owner = this;
+            instructorsForm.ShowDialog();
+        }
     }
 
 }

@@ -42,6 +42,10 @@
             label6 = new Label();
             dataGridView1 = new DataGridView();
             panel2 = new Panel();
+            label19 = new Label();
+            label18 = new Label();
+            label17 = new Label();
+            label16 = new Label();
             label9 = new Label();
             label2 = new Label();
             label8 = new Label();
@@ -205,6 +209,10 @@
             // 
             panel2.BackColor = Color.DarkBlue;
             panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
+            panel2.Controls.Add(label19);
+            panel2.Controls.Add(label18);
+            panel2.Controls.Add(label17);
+            panel2.Controls.Add(label16);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label8);
@@ -215,6 +223,60 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(249, 779);
             panel2.TabIndex = 10;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.BackColor = Color.Transparent;
+            label19.Cursor = Cursors.Hand;
+            label19.Font = new Font("Rockwell", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            label19.ForeColor = SystemColors.Control;
+            label19.Location = new Point(86, 487);
+            label19.Name = "label19";
+            label19.Size = new Size(70, 19);
+            label19.TabIndex = 26;
+            label19.Text = "Subjects";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.BackColor = Color.Transparent;
+            label18.Cursor = Cursors.Hand;
+            label18.Font = new Font("Rockwell", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            label18.ForeColor = SystemColors.Control;
+            label18.Location = new Point(79, 347);
+            label18.Name = "label18";
+            label18.Size = new Size(91, 19);
+            label18.TabIndex = 25;
+            label18.Text = "Dashboard";
+            label18.Click += label18_Click;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.Transparent;
+            label17.Cursor = Cursors.Hand;
+            label17.Font = new Font("Rockwell", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            label17.ForeColor = SystemColors.Control;
+            label17.Location = new Point(93, 440);
+            label17.Name = "label17";
+            label17.Size = new Size(58, 19);
+            label17.TabIndex = 24;
+            label17.Text = "Rooms";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.Transparent;
+            label16.Cursor = Cursors.Hand;
+            label16.Font = new Font("Rockwell", 12F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            label16.ForeColor = SystemColors.Control;
+            label16.Location = new Point(80, 393);
+            label16.Name = "label16";
+            label16.Size = new Size(87, 19);
+            label16.TabIndex = 23;
+            label16.Text = "Instructors";
+            label16.Click += label16_Click_1;
             // 
             // label9
             // 
@@ -483,5 +545,9 @@
         private OpenFileDialog openFileDialog1;
         private Label timeLabel;
         private Panel panel3;
+        private Label label19;
+        private Label label18;
+        private Label label17;
+        private Label label16;
     }
 }
