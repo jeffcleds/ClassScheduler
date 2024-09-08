@@ -263,6 +263,7 @@
             label17.Size = new Size(58, 19);
             label17.TabIndex = 24;
             label17.Text = "Rooms";
+            label17.Click += label17_Click;
             // 
             // label16
             // 

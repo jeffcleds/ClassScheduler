@@ -336,6 +336,13 @@ namespace ClassScheduler1
             instructorsForm.Owner = this;
             instructorsForm.ShowDialog();
         }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            RoomForm instructorsForm = new RoomForm();
+            instructorsForm.Owner = this;
+            instructorsForm.ShowDialog();
+        }
     }
 
 }

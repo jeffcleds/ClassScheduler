@@ -31,6 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstructorsForm));
             label1 = new Label();
             panel1 = new Panel();
+            editInstructorPNL = new Panel();
+            saveBtn = new Button();
+            label11 = new Label();
+            txtEdtDepartment = new TextBox();
+            label12 = new Label();
+            txtEdtMI = new TextBox();
+            label13 = new Label();
+            txtEdtFirstName = new TextBox();
+            label14 = new Label();
+            txtEdtLastName = new TextBox();
+            label15 = new Label();
+            txtEdtEmployeeNo = new TextBox();
+            label16 = new Label();
+            editCancelBtn = new Button();
             closePB = new PictureBox();
             dataGridView1 = new DataGridView();
             label4 = new Label();
@@ -53,13 +67,16 @@
             txtEmployeeNo = new TextBox();
             label5 = new Label();
             cancelBtn = new Button();
+            dataGridView2 = new DataGridView();
             panel1.SuspendLayout();
+            editInstructorPNL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)closePB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             addInstructorPNL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -82,6 +99,140 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(548, 37);
             panel1.TabIndex = 1;
+            // 
+            // editInstructorPNL
+            // 
+            editInstructorPNL.Controls.Add(dataGridView2);
+            editInstructorPNL.Controls.Add(saveBtn);
+            editInstructorPNL.Controls.Add(label11);
+            editInstructorPNL.Controls.Add(txtEdtDepartment);
+            editInstructorPNL.Controls.Add(label12);
+            editInstructorPNL.Controls.Add(txtEdtMI);
+            editInstructorPNL.Controls.Add(label13);
+            editInstructorPNL.Controls.Add(txtEdtFirstName);
+            editInstructorPNL.Controls.Add(label14);
+            editInstructorPNL.Controls.Add(txtEdtLastName);
+            editInstructorPNL.Controls.Add(label15);
+            editInstructorPNL.Controls.Add(txtEdtEmployeeNo);
+            editInstructorPNL.Controls.Add(label16);
+            editInstructorPNL.Controls.Add(editCancelBtn);
+            editInstructorPNL.Location = new Point(0, 36);
+            editInstructorPNL.Name = "editInstructorPNL";
+            editInstructorPNL.Size = new Size(548, 342);
+            editInstructorPNL.TabIndex = 19;
+            editInstructorPNL.Visible = false;
+            // 
+            // saveBtn
+            // 
+            saveBtn.Location = new Point(21, 310);
+            saveBtn.Name = "saveBtn";
+            saveBtn.Size = new Size(75, 23);
+            saveBtn.TabIndex = 12;
+            saveBtn.Text = "Save";
+            saveBtn.UseVisualStyleBackColor = true;
+            saveBtn.Click += saveBtn_Click;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(29, 255);
+            label11.Name = "label11";
+            label11.Size = new Size(70, 15);
+            label11.TabIndex = 11;
+            label11.Text = "Department";
+            // 
+            // txtEdtDepartment
+            // 
+            txtEdtDepartment.Location = new Point(29, 273);
+            txtEdtDepartment.Name = "txtEdtDepartment";
+            txtEdtDepartment.Size = new Size(100, 23);
+            txtEdtDepartment.TabIndex = 10;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(29, 212);
+            label12.Name = "label12";
+            label12.Size = new Size(24, 15);
+            label12.TabIndex = 9;
+            label12.Text = "M.I";
+            // 
+            // txtEdtMI
+            // 
+            txtEdtMI.Location = new Point(29, 229);
+            txtEdtMI.Name = "txtEdtMI";
+            txtEdtMI.Size = new Size(100, 23);
+            txtEdtMI.TabIndex = 8;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(29, 161);
+            label13.Name = "label13";
+            label13.Size = new Size(64, 15);
+            label13.TabIndex = 7;
+            label13.Text = "First Name";
+            // 
+            // txtEdtFirstName
+            // 
+            txtEdtFirstName.Location = new Point(29, 181);
+            txtEdtFirstName.Name = "txtEdtFirstName";
+            txtEdtFirstName.Size = new Size(100, 23);
+            txtEdtFirstName.TabIndex = 6;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(29, 110);
+            label14.Name = "label14";
+            label14.Size = new Size(63, 15);
+            label14.TabIndex = 5;
+            label14.Text = "Last Name";
+            // 
+            // txtEdtLastName
+            // 
+            txtEdtLastName.Location = new Point(29, 131);
+            txtEdtLastName.Name = "txtEdtLastName";
+            txtEdtLastName.Size = new Size(100, 23);
+            txtEdtLastName.TabIndex = 4;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(26, 63);
+            label15.Name = "label15";
+            label15.Size = new Size(81, 15);
+            label15.TabIndex = 3;
+            label15.Text = "Employee No.";
+            // 
+            // txtEdtEmployeeNo
+            // 
+            txtEdtEmployeeNo.Location = new Point(29, 82);
+            txtEdtEmployeeNo.Name = "txtEdtEmployeeNo";
+            txtEdtEmployeeNo.Size = new Size(100, 23);
+            txtEdtEmployeeNo.TabIndex = 2;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.Transparent;
+            label16.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = SystemColors.ActiveCaptionText;
+            label16.Location = new Point(223, 26);
+            label16.Name = "label16";
+            label16.Size = new Size(118, 21);
+            label16.TabIndex = 1;
+            label16.Text = "Edit Instructor";
+            // 
+            // editCancelBtn
+            // 
+            editCancelBtn.Location = new Point(103, 310);
+            editCancelBtn.Name = "editCancelBtn";
+            editCancelBtn.Size = new Size(75, 23);
+            editCancelBtn.TabIndex = 0;
+            editCancelBtn.Text = "Cancel";
+            editCancelBtn.UseVisualStyleBackColor = true;
+            editCancelBtn.Click += editCancelBtn_Click;
             // 
             // closePB
             // 
@@ -113,6 +264,7 @@
             label4.Size = new Size(94, 15);
             label4.TabIndex = 17;
             label4.Text = "Delete Instructor";
+            label4.Click += label4_Click_1;
             // 
             // label3
             // 
@@ -124,6 +276,7 @@
             label3.Size = new Size(81, 15);
             label3.TabIndex = 16;
             label3.Text = "Edit Instructor";
+            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -147,6 +300,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 14;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox2
             // 
@@ -158,6 +312,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -186,9 +341,9 @@
             addInstructorPNL.Controls.Add(txtEmployeeNo);
             addInstructorPNL.Controls.Add(label5);
             addInstructorPNL.Controls.Add(cancelBtn);
-            addInstructorPNL.Location = new Point(-1, 38);
+            addInstructorPNL.Location = new Point(-1, 51);
             addInstructorPNL.Name = "addInstructorPNL";
-            addInstructorPNL.Size = new Size(548, 342);
+            addInstructorPNL.Size = new Size(549, 326);
             addInstructorPNL.TabIndex = 18;
             addInstructorPNL.Visible = false;
             // 
@@ -289,7 +444,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(223, 44);
+            label5.Location = new Point(223, 30);
             label5.Name = "label5";
             label5.Size = new Size(119, 21);
             label5.TabIndex = 1;
@@ -305,12 +460,23 @@
             cancelBtn.UseVisualStyleBackColor = true;
             cancelBtn.Click += cancelBtn_Click;
             // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(143, 60);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(392, 236);
+            dataGridView2.TabIndex = 13;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
+            // 
             // InstructorsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(547, 377);
+            Controls.Add(editInstructorPNL);
+            Controls.Add(addInstructorPNL);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -319,13 +485,15 @@
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
             Controls.Add(panel1);
-            Controls.Add(addInstructorPNL);
             FormBorderStyle = FormBorderStyle.None;
             Name = "InstructorsForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Instructors";
+            Load += InstructorsForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            editInstructorPNL.ResumeLayout(false);
+            editInstructorPNL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)closePB).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -333,6 +501,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             addInstructorPNL.ResumeLayout(false);
             addInstructorPNL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -363,5 +532,20 @@
         private TextBox txtFirstName;
         private Label label7;
         private TextBox txtLastName;
+        private Panel editInstructorPNL;
+        private Button saveBtn;
+        private Label label11;
+        private TextBox txtEdtDepartment;
+        private Label label12;
+        private TextBox txtEdtMI;
+        private Label label13;
+        private TextBox txtEdtFirstName;
+        private Label label14;
+        private TextBox txtEdtLastName;
+        private Label label15;
+        private TextBox txtEdtEmployeeNo;
+        private Label label16;
+        private Button editCancelBtn;
+        private DataGridView dataGridView2;
     }
 }
